@@ -11,18 +11,20 @@
 }
 .accordion ul > li .title-bar{
 	padding: 10px;
-	background: #eaeaea;
+	background: #3386b7;
 }
 .accordion ul > li .title-bar .title{
 	display: inline-block;
 	float: left;
 	font-weight: bold;
 	font-size: 15px;
+	color: #fff;
 }
 .accordion ul > li .title-bar .collpsable{
 	display: inline-block;
 	float: right;
 	cursor: pointer;
+	color: #fff;
 }
 .accordion ul > li .check-exapandable{
 	display: none;

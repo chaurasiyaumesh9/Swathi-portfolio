@@ -3,7 +3,7 @@
 
 		<li *ngFor="let Option of AccordionData" >
 			<div class="accordion-wrapper">
-				<input type="radio" name="accordion" class="check-exapandable" id="chk_{{Option.Title}}">
+				<input type="checkbox" name="accordion" class="check-exapandable" id="chk_{{Option.Title}}">
 				<div class="title-bar">
 					<span class="title"> {{Option.Title}}</span>				
 					<label class="collpsable expand" for="chk_{{Option.Title}}">
