@@ -20,10 +20,10 @@ export class SliderComponent implements OnInit {
 		Title: "Image 4",
 		URL: "assets/images/img_nature_wide.jpg"
 	}];
-	CurrentIndex:Number = 0;
-	SlideWidth:Number = 1000;
+	CurrentIndex:any = 0;
+	SlideWidth:any = 1000;
 	MoveBy:any;
-	NumSlides:Number = this.Data.length;
+	NumSlides:any = this.Data.length;
 
   constructor() { }
 
@@ -33,20 +33,20 @@ export class SliderComponent implements OnInit {
   GoBack( event ){
   	event.preventDefault();
   	if ( this.CurrentIndex >0 ) { this.CurrentIndex--};
-  	let MoveBy = this.SlideWidth * this.CurrentIndex;
-  	this.MoveBy = "translateX(-"+ MoveBy +"px)";
+  	let MoveByPixels = this.SlideWidth * this.CurrentIndex;
+  	this.MoveBy = "translateX(-"+ MoveByPixels +"px)";
   }
   MoveNext( event ){
   	event.preventDefault();
   	if ( this.CurrentIndex < this.NumSlides-1) { this.CurrentIndex++};
-  	let MoveBy = this.SlideWidth * this.CurrentIndex;
-  	this.MoveBy = "translateX(-"+ MoveBy +"px)";
+  	let MoveByPixels = this.SlideWidth * this.CurrentIndex;
+  	this.MoveBy = "translateX(-"+ MoveByPixels +"px)";
   }
   MoveTo( _index, _event ){
   	_event.preventDefault();
   	this.CurrentIndex = _index || 0;
-  	let MoveBy = this.SlideWidth * this.CurrentIndex;
-  	this.MoveBy = "translateX(-"+ MoveBy +"px)";
+  	let MoveByPixels = this.SlideWidth * this.CurrentIndex;
+  	this.MoveBy = "translateX(-"+ MoveByPixels +"px)";
   }
 
 }
